@@ -192,3 +192,30 @@ void Widget::on_Equal_clicked()
     showExpression = result_str;
     ui->lineEdit->setText(result_str);
 }
+
+void Widget::on_Imaginary_Number_clicked()
+{
+    expression += 'i';
+    showExpression += 'i';
+    ui->lineEdit->setText(showExpression);
+}
+
+
+void Widget::on_Random_clicked()
+{
+    expression = QString::fromStdString(random_expression());
+    QString temp = expression;
+    showExpression = temp.replace("/","÷").replace("*","×");
+    ui->lineEdit->setText(showExpression);
+}
+
+
+void Widget::on_File_clicked()
+{
+    expression = QString::fromStdString(file_expression());
+    QString temp = expression;
+    showExpression = temp.replace("/","÷").replace("*","×");
+    ui->lineEdit->setText(showExpression);
+}
+
+

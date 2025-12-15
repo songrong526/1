@@ -58,6 +58,12 @@ private slots:
 
     void on_Equal_clicked();
 
+    void on_Imaginary_Number_clicked();
+
+    void on_Random_clicked();
+
+    void on_File_clicked();
+
 private:
     Ui::Widget *ui;
     QString expression,showExpression;
