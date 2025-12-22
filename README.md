@@ -1,3 +1,3 @@
 3-1的两个文件是vscode中运行的，引用了Easyx库
 除此之外的四个文件是在qt中运行的，设计了界面
-eexpression.txt要放在.exe同级目录下
+expression.txt要放在.exe同级目录下
